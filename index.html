@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Sinema bilet rezervasyonu</title>
+    <title>Cinema Tickets</title>
 </head>
 <body>
     
     <div class="container">
+        <div class="screen"></div>
         <div class="row">
             <div class="seat"></div>
             <div class="seat"></div>
@@ -87,10 +88,42 @@
             <div class="seat"></div>
             <div class="seat"></div>
             <div class="seat"></div>
-            <div class="seat"></div>
-        </div>
+
+                    </div>
     </div>
 
+
+        <div class="movie-list">
+            <select name="" id="movie">
+                <option value="20">Movie 1</option>
+                <option value="25">Movie 2</option>
+                <option value="30">Movie 3</option>
+                <option value="25">Movie 4</option>
+
+        </select>
+
+        </div>
+        <ul class="info">
+            <li>
+                <div class="seat selected"></div>
+                <small>Selected</small>
+            </li>
+
+            <li>
+                <div class="seat"></div>
+                <small>Avaiable</small>
+            </li>
+            
+            <li>
+                <div class="seat reserved"></div>
+                <small>Reserved</small>
+            </li>
+        </ul>
+
+        <p class="text">
+           For <span id="count"></span> tickets you should pay <span id="amount"></span> euro.
+
+        </p>
 
 
     <script src="script.js"></script>
